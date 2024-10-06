@@ -11,6 +11,14 @@ class PreferenceUtil(context: Context) {
         get() = appContext.getSharedPreferences("GoallyPreferenceFile", Context.MODE_PRIVATE)
 
 
+    fun saveToken(key: String, value: String) {
+        preference.edit().putString(key, value).apply()
+    }
+
+    fun getToken(key: String, default: String? = null): String? {
+        return preference.getString(key, default)
+    }
+
     fun saveString(key: String, value: String) {
         preference.edit().putString(key, value).apply()
     }
