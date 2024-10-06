@@ -7,11 +7,15 @@ import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.net.Uri
+import android.os.BatteryManager
 import android.provider.Settings
 import android.util.DisplayMetrics
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity.BATTERY_SERVICE
+import com.android.goally.R
+import com.android.goally.app.GoallyApp
 import com.google.firebase.crashlytics.FirebaseCrashlytics
 import kotlin.math.pow
 import kotlin.math.sqrt
@@ -120,6 +124,22 @@ object AppUtil {
         return Settings.System.getInt(
             context.contentResolver, Settings.Global.AIRPLANE_MODE_ON, 0
         ) != 0
+    }
+
+    fun updateBatteryLevel(): Int {
+        val bm = GoallyApp.applicationContext().getSystemService(BATTERY_SERVICE) as BatteryManager
+        return getBatteryIcon(bm.getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY))
+    }
+    fun getBatteryIcon(batteryLevel: Int): Int {
+        return when {
+            batteryLevel < 5 -> R.drawable.fivebelow
+            batteryLevel < 20 -> R.drawable.fivebelow
+            batteryLevel < 40 -> R.drawable.twentyplus
+            batteryLevel < 50 -> R.drawable.fiftybelow
+            batteryLevel < 70 -> R.drawable.fiftyplus
+            batteryLevel < 90 -> R.drawable.seventyplus
+            else -> R.drawable.hundred
+        }
     }
 
 }

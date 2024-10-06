@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- State when the button is checked -->
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/light_green" /> <!-- Filled green color -->
+                    <stroke android:width="2dp" android:color="@color/black" /> <!-- Black stroke -->
+                    <size android:width="20dp" android:height="20dp"/> <!-- Set size of the button -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- State when the button is unchecked -->
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@android:color/transparent" /> <!-- No fill color -->
+                    <stroke android:width="2dp" android:color="@color/black" /> <!-- Black stroke -->
+                    <size android:width="20dp" android:height="20dp"/> <!-- Set size of the button -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

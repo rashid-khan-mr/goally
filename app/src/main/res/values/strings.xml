@@ -7,4 +7,34 @@
     <string name="please_your_original_email">Please your original email</string>
     <string name="your_work_starts_here_add_or_update_your_own_views_according_to_your_assignment">Your work starts here. Add or update your own views according to your assignment.</string>
     <string name="you_are_logged_in_as">You are logged in as\n%1$s</string>
+
+    <string name="folder">Folder</string>
+    <string name="Schedule">Schedule</string>
+
+
+    <string name="allfolder">All Folders</string>
+    <string name="Chores">Chores</string>
+    <string name="Cloths">Cloths</string>
+    <string name="education">Education</string>
+    <string name="emotional">Emotional</string>
+    <string name="food">Food</string>
+    <string name="hygiene">Hygiene</string>
+    <string name="social">Social</string>
+    <string name="other">Other</string>
+    <string name="folders">Folders</string>
+    <string name="filtered">Filtered</string>
+
+
+    <string name="all">All</string>
+    <string name="anytime">AnyTime</string>
+    <string name="repeating">Repeating</string>
+    <string name="onetime">One Time</string>
+
+    <string name="longNameTitle">LongName’s CoPilot</string>
+    <string name="copiletDetailsTitle">Do your homework</string>
+    <string name="_string_message_wait">Please wait...</string>
+    <string name="no_internet">No Internet</string>
+    <string name="no_internet_des">Loading a new CoPliet\nrequire an internet\nconnection</string>
+    <string name="okay">Okay</string>
+
 </resources>

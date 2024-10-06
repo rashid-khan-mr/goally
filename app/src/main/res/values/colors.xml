@@ -6,5 +6,14 @@
     <color name="retroPurple">#7325CE</color>
     <color name="white_onboarding">#FDFCFF</color>
     <color name="grey_onboarding">#7D8E97</color>
+    <color name="light_gray">#7D8E97</color>
+    <color name="light_green">#72CEBC</color>
+    <color name="half_white">#F6F6F6</color>
+    <color name="greeen">#D2F7E1</color>
+    <color name="dar_greeen">#27AE60</color>
+    <color name="red">#F45177</color>
+    <color name="yellow">#FFF492</color>
+    <color name="gray">#CACACA</color>
+
 
 </resources>

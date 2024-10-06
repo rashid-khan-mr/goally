@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliderLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/folderOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/folderTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Schedule"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintTop_toTopOf="@+id/folderTitleTv"
+            app:layout_constraintRight_toLeftOf="@+id/folderTitleTv"
+            app:layout_constraintBottom_toBottomOf="@id/folderTitleTv"
+            android:src="@drawable/folder_icon"
+            android:layout_marginEnd="10dp"/>
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupFolderOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/folderTitleTv"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <RadioButton
+                android:id="@+id/allFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/allfolder"
+                android:button="@drawable/custom_radiobtn"
+                android:buttonTint="@null"
+                android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+                />
+
+            <RadioButton
+                android:id="@+id/choresFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Chores"
+                android:button="@drawable/custom_radiobtn"
+                android:buttonTint="@null"
+                android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+                />
+
+            <RadioButton
+                android:id="@+id/clothsFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cloths"
+                android:button="@drawable/custom_radiobtn"
+                android:buttonTint="@null"
+                android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+                />
+            <RadioButton
+                android:id="@+id/educationFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/education"
+                android:button="@drawable/custom_radiobtn"
+                android:buttonTint="@null"
+                android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+                />
+            <RadioButton
+                android:id="@+id/emotionalFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emotional"
+                android:button="@drawable/custom_radiobtn"
+                android:buttonTint="@null"
+                android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+                />
+           <RadioButton
+                android:id="@+id/foodFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/food"
+               android:button="@drawable/custom_radiobtn"
+               android:buttonTint="@null"
+               android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+               />
+           <RadioButton
+                android:id="@+id/hygieneFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hygiene"
+               android:button="@drawable/custom_radiobtn"
+               android:buttonTint="@null"
+               android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+               />
+        <RadioButton
+                android:id="@+id/socialFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/social"
+            android:button="@drawable/custom_radiobtn"
+            android:buttonTint="@null"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <RadioButton
+                android:id="@+id/otherFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other"
+            android:button="@drawable/custom_radiobtn"
+            android:buttonTint="@null"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scheduleOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp">
+
+
+        <TextView
+            android:id="@+id/scheduleTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Schedule"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintTop_toTopOf="@+id/scheduleTitleTv"
+            app:layout_constraintRight_toLeftOf="@+id/scheduleTitleTv"
+            app:layout_constraintBottom_toBottomOf="@id/scheduleTitleTv"
+            android:src="@drawable/schedule_icon"
+            android:layout_marginEnd="10dp"
+            />
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupScheduleOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/scheduleTitleTv"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <RadioButton
+            android:id="@+id/allSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all"
+            android:button="@drawable/custom_radiobtn"
+            android:buttonTint="@null"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+            <RadioButton
+            android:id="@+id/anytimeSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anytime"
+            android:button="@drawable/custom_radiobtn"
+            android:buttonTint="@null"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+            <RadioButton
+            android:id="@+id/repeatingSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repeating"
+            android:button="@drawable/custom_radiobtn"
+            android:buttonTint="@null"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+            <RadioButton
+            android:id="@+id/onetimeSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onetime"
+            android:button="@drawable/custom_radiobtn"
+            android:buttonTint="@null"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

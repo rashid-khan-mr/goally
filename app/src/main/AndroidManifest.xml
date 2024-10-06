@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.android.goally.app.GoallyApp"
+        android:name=".app.GoallyApp"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:largeHeap="true"
@@ -47,7 +47,18 @@
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
             android:screenOrientation="portrait"
             android:stateNotNeeded="true"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/FullScreen"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".ui.home.CopiletDetailsActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen"
+            android:screenOrientation="portrait"
+            />
 
     </application>
 

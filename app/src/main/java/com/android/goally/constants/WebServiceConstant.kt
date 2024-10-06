@@ -8,4 +8,5 @@ object WebServiceConstant {
 
     const val CHECK_HEALTH = API_VERSION + "health"
     const val GET_TOKEN = API_VERSION + "devices/get-token"
+    const val GET_COPILET = API_VERSION + "devices/copilot-list"
 }

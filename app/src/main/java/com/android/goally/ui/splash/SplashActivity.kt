@@ -61,6 +61,7 @@ class SplashActivity : BaseActivity() {
                     if(it.token.isNullOrEmpty()) {
                         gotoAuthScreen()
                     }else{
+                        preferenceUtil.saveToken("Authentication", it.token.toString())
                         startActivity(HomeActivity.getCallingIntent(this@SplashActivity))
                     }
                 }?:run{

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/activityGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        />
+    <ImageView
+        android:id="@+id/dotedBotomIv"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activityGuideline"
+        android:src="@drawable/dotedcircle"
+
+        />
+
+    <ImageView
+        android:id="@+id/dotedTopIv"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/activityGuideline"
+        android:src="@drawable/dotedcircle"
+
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/activityOddLayout"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            app:layout_constraintWidth_percent="0.4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dotedTopIv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/rounded_img_bg"
+            android:layout_marginLeft="5dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/activityOddIv"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/copilet_activity_placeholder"
+        android:background="@drawable/rounded_dialog_bg"
+        app:riv_corner_radius="5dp"
+        android:scaleType="centerCrop"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/activityOddNameTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/activityOddLayout"
+        android:gravity="center_vertical"
+        android:textSize="16dp"
+        android:text="Social"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
